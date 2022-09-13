@@ -18,9 +18,8 @@ function flipCard() {
     } else {
         hasFlippedCard = false;
         secondCard = this;
-
         checkForMatch();
-        }
+    }
 }
 
 function checkForMatch () {
@@ -48,11 +47,6 @@ function unflipCards () {
     }, 1000); 
 }
 
-function resetBoard () {
-    [hasFlippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
-}
-
 function shuffleCards () {
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 16);
@@ -70,12 +64,12 @@ function checkMatchedPairs () {
         alert('YOU WON, CONGRATULATIONS!');
         window.location.reload();
         return;    
-        },500);
+        },750);
       
     } else {
         setTimeout(() => {
         printMatchedPairs(); 
-        },500);
+        },750);
     }
 }
 cards.forEach(card => card.addEventListener('click', flipCard));

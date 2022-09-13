@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-image: url("img/background_space.jpg");
+    background: url("img/background_space.jpg"), black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -17,8 +17,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    width: 640px;
-    height: 800px;
+    width: 480px;
+    height: 600px;
     perspective: 1200px;
 }
 
@@ -33,11 +33,13 @@ body {
 
 .wins-counter {
     display:flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 10px;
     font-size: 25px;
     font-weight: bold;
     color: orangered;
     opacity: 80%;
-    margin-bottom: 30px;
 }
 
 .memory-card.flip {
