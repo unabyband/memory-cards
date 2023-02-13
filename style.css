@@ -29,6 +29,7 @@ body {
     margin: 5px;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    cursor: pointer;
 }
 
 .wins-counter {
